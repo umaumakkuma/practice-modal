@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>モーダルを作ってみよう</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="wrap">
+    <button class="btn btn--info" data-modal-trigger="modal-info">Information button</button>
+    <div class="modal-wrap" data-modal-trigger="modal-info" data-modal-target="modal-info">
+      <div class="modal-content">
+        <div class="modal-content_head">
+          <p class="modal-content_head_ttl">Information modal title</p>
+          <button class="modal-btn-close" data-modal-trigger="modal-info">×</button>
+        </div>
+        <div class="modal-content_body">
+          <p>Information modal body</p>
+          <img src="https://placekitten.com/600/400" alt="子猫の写真">
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn--success" data-modal-trigger="modal-success">Success button</button>
+    <div class="modal-wrap" data-modal-target="modal-success" data-modal-trigger="modal-success">
+      <div class="modal-content">
+        <div class="modal-content_head">
+          <p class="modal-content_head_ttl">Success modal title</p>
+          <button class="modal-btn-close" data-modal-trigger="modal-success">×</button>
+        </div>
+        <div class="modal-content_body">
+          <p>Success modal body</p>
+          <img src="https://placekitten.com/600/450" alt="子猫の写真">
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn--danger" data-modal-trigger="modal-danger">Danger button</button>
+    <div class="modal-wrap" data-modal-target="modal-danger" data-modal-trigger="modal-danger">
+      <div class="modal-content">
+        <div class="modal-content_head">
+          <p class="modal-content_head_ttl">Danger modal title</p>
+          <button class="modal-btn-close" data-modal-trigger="modal-danger">×</button>
+        </div>
+        <div class="modal-content_body">
+          <p>Danger modal body</p>
+          <img src="https://placekitten.com/600/500" alt="子猫の写真">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
